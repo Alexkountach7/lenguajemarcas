@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Navegación futbol y complementos</title>
+    <style>
+        
+        .nav {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #333;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+            text-align: center;
+        }
+
+        
+        @media (max-width: 768px) {
+            .nav {
+                flex-direction: column; 
+            }
+
+            .nav-item {
+                flex: 1 1 100%; 
+            }
+        }
+
+        
+        @media (min-width: 768px) {
+            .nav {
+                flex-direction: row; 
+            }
+
+            
+            .nav-item.especial {
+                align-self: center; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+<ul class="nav">
+    <li class="nav-item"><a href="https://www.sport.es/es/">sport</a></li>
+    <li class="nav-item"><a href="https://as.com/">as</a></li>
+    <li class="nav-item especial"><a href="https://www.mundodeportivo.com/">mundodeportivo</a></li> 
+    <li class="nav-item"><a href="https://www.marca.com/">marca</a></li>
+    <li class="nav-item"><a href="https://www.adidas.es/">adidas</a></li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería futbolistas y complementos</title>
+    <style>
+        
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .galeria img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        
+        @media (max-width: 768px) {
+            .galeria-item {
+                flex: 1 1 100%; 
+            }
+        }
+
+        
+        @media (min-width: 768px) {
+            .galeria-item {
+                flex: 1 1 calc(33.333% - 10px); 
+            }
+
+            
+            .galeria-item.grande {
+                flex-grow: 2;
+            }
+
+            
+            .galeria-item.alta {
+                align-self: flex-start;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="galeria">
+    <div class="galeria-item"><img src="gamefutbol.jpg" alt="Imagen 1"></div>
+    <div class="galeria-item alta"><img src="henry.jpg" alt="Imagen 2"></div>
+    <div class="galeria-item"><img src="barcagoiko.jpg" alt="Imagen 3"></div>
+    <div class="galeria-item"><img src="laliga.jpg" alt="Imagen 4"></div>
+    <div class="galeria-item grande"><img src="beck.jpg" alt="Imagen 5"></div>
+    <div class="galeria-item"><img src="anelkazid.jpg" alt="Imagen 6"></div>
+    <div class="galeria-item"><img src="figosel.jpg" alt="imagen 7"></div>
+    <div class="galeria-item"><img src="magico.jpg" alt="imagen 8"></div>
+</div>
+
+</body>
+</html>

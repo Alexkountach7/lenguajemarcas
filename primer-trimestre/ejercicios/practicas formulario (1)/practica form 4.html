@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulario de compra</title>
+</head>
+<body>
+
+<h2>Formulario de compra</h2>
+
+<label for="producto">Nombre del producto:</label><br>
+    <input type="text" id="producto" name="producto" required><br><br>
+
+    <label for="cantidad">Cantidad:</label><br>
+    <input type="number" id="cantidad" name="cantidad" min="1" required><br><br>
+
+    <label>Método de pago:</label><br>
+    <input type="radio" id="tarjeta" name="metodo_pago" value="tarjeta" required>
+    <label for="tarjeta">Tarjeta de crédito</label><br>
+    
+    <input type="radio" id="paypal" name="metodo_pago" value="paypal" required>
+    <label for="paypal">PayPal</label><br><br>
+
+    
+    <input type="checkbox" id="terminos" name="terminos" required>
+    <label for="terminos">Acepto los términos de servicio</label><br><br>
+
+   
+    <input type="submit" value="Realizar compra">
+</body>
+</html>
+
